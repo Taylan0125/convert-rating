@@ -1,44 +1,106 @@
-body {
-    display: flex;
+@media (min-width: 720px) {
+    body {
+        display: flex;
+        background-color: olive;
+        justify-content: center;
+        align-items: center;
+    }
 
-    justify-content: center;
-    align-items: center;
+    h1 {
+        font-family: 'Press Start 2P', cursive;
+    }
+
+    .oldrating {
+        height: 200px;
+        width: 200px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background-color: rgb(117, 154, 154);
+        box-shadow: 5px 10px #888888;
+    }
+
+    .newrating {
+        height: 200px;
+        width: 200px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background-color: rgb(181, 134, 73);
+        box-shadow: 5px 10px #888888;
+    }
+
+    input {
+
+        width: 100px;
+    }
+
+    .numerator {
+        display: flex;
+    }
 }
 
-.container {
-    display: flex;
+@media (min-width:320px) {
+    body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(65, 47, 136);
+    }
+}
 
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+    color: chocolate;
 }
 
 .oldrating {
-    height: 200px;
-    width: 200px;
+    margin: 0;
+    height: 300px;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     background-color: rgb(117, 154, 154);
     box-shadow: 5px 10px #888888;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+    padding-left: 10%;
 }
 
 .newrating {
-    height: 200px;
-    width: 200px;
+    margin: 0;
+    height: 300px;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    background-color: rgb(181, 134, 73);
+    background-color: rgb(131, 191, 226);
     box-shadow: 5px 10px #888888;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+    flex-wrap: nowrap;
+    padding-left: 10%;
+}
+
+button {
+    background-color: indianred;
+    height: 60px;
+    width: 150px;
+    text-align: center;
+    margin-left: 35%;
+    font-size: 20px;
+    border-radius: 20px;
+    font-family: 'Press Start 2P', cursive;
+    flex-wrap: nowrap;
+    color: wheat;
 }
 
 input {
-
-    width: 100px;
-}
-
-.numerator {
-    display: flex;
+    height: 50px;
+    width: 80%;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Press Start 2P', cursive;
 }
